@@ -1,0 +1,28 @@
+/* CSS */
+
+@import url("https://transfer.archivete.am/12GDuV/segoe_fontz.css");
+
+:root {
+  --web-font: "Segoe UI", Segoe UI Light, Segoe UI Bold;
+}
+
+/* Body CSS */
+
+html, body {
+font-family: var(--file-nayra-font);
+background: linear-gradient(135deg, rgba(180,208,255,1) 0%, rgba(149,188,255,1) 50%, rgba(85,147,255,1) 100%);
+animation-name: introWeb;
+animation-duration: 2.5s;
+cursor: default;
+pointer-events: none;
+filter: blur(0px);
+width: auto;
+height: auto;
+overflow: hidden;
+margin: 0px;
+}
+
+b, bold, strong {
+font-family: "Segoe UI Bold"!important;
+font-weight: normal!important;
+}
