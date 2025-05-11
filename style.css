@@ -422,7 +422,7 @@ div[channel][hasbuttonsen="yes"] > a {
 }
 
 div[channel] {
-    margin-top: 12.5px;
+    margin-top: 20.5px;
     display: inline-flex;
     width: 100%;
     justify-content: center;
@@ -443,4 +443,11 @@ div[channel][hasbuttonsen="yes"] > a[downloadlink] {
 }
 div[channel][hasbuttonsen="yes"] > a[downloadlink]:hover {
     filter: brightness(96.5%);
+}
+
+hr {
+    margin-left: 40.5px;
+    margin-right: 37.5px;
+    border: hidden;
+    border-top: 0.5px solid #cdcdcd;
 }
