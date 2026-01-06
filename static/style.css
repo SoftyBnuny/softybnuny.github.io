@@ -1,0 +1,181 @@
+/* --.-- SOFTYBNUNY CSS CODE == TO BE USED WITHIN THE SITE --.-- */
+
+@import url("font-mdhbhs6zna7on.css");
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	/* pointer-events: none;
+	user-select: none; */
+	font-family: "Fuzzy Bubbles";
+}
+
+@keyframes fadeIntro {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeIntroB {
+	from {margin-left: -1500;}
+	to {margin-left: 0;}
+}
+
+/* - */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+	cursor: default;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: black;
+}
+
+body {
+	opacity: 1;
+	animation: fadeIntro 0.75s ease;
+	background: center / cover no-repeat url('./bg-mdhbhs6zna7on.webp');
+}
+
+b, bold, strong {
+    font-family: "Fuzzy Bubbles Bold";
+    font-weight: normal;
+}
+
+/* --- START OF THE FULL PAGE --- */
+
+homepage.b629nx75c {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+	animation: fadeIntroB 2s ease;
+}
+
+homepage.b629nx75c > logo {
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+homepage.b629nx75c > logo > div {
+	width: 202.5px;
+	height: 200px;
+	margin: 20px;
+}
+homepage.b629nx75c > logo > div > svg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	filter: drop-shadow(0px 0px 7.5px #ffffff);
+}
+
+homepage.b629nx75c > site-linkz {
+    margin-left: 100px;
+    display: flex;
+}
+
+/* -- */
+
+homepage.b629nx75c > site-linkz > ol, homepage.b629nx75c > site-linkz > ol > li, site-linkz > ol > li::marker {
+    margin: 0;
+    content: none;
+    padding: 0;
+}
+
+homepage.b629nx75c > site-linkz > ol > li {
+    background: transparent;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border-radius: 7.5px;
+    cursor: pointer;
+    display: flex;
+    pointer-events: all;
+    user-select: none;
+    margin-bottom: 17.5px;
+    justify-content: center;
+    align-items: flex-end;
+	transition: all ease 0.1s;
+}
+
+homepage.b629nx75c > site-linkz > ol > li#fa-lnk > svg,
+homepage.b629nx75c > site-linkz > ol > li#bsky-lnk > svg,
+homepage.b629nx75c > site-linkz > ol > li#da-lnk > svg,
+homepage.b629nx75c > site-linkz > ol > li#disc-lnk > svg {
+    width: 30px;
+    height: 30px;
+    margin: 0 10 0 0;
+    padding: 0;
+    fill: white;
+}
+
+/* - */
+
+homepage.b629nx75c > site-linkz > ol > li#fa-lnk {
+    background: rgb(215 165 45);
+    filter: drop-shadow(0px 0px 5px rgb(215 165 45));
+}
+
+homepage.b629nx75c > site-linkz > ol > li#fa-lnk:hover {
+    background: rgb(205 155 35);
+    filter: drop-shadow(0px 0px 5px rgb(205 155 35));
+}
+homepage.b629nx75c > site-linkz > ol > li#fa-lnk:active {
+    background: rgb(200 150 30);
+    filter: drop-shadow(0px 0px 5px rgb(200 150 30));
+}
+
+/* - */
+
+homepage.b629nx75c > site-linkz > ol > li#bsky-lnk {
+    background: rgb(45 145 215);
+    filter: drop-shadow(0px 0px 5px rgb(45 145 215));
+}
+
+homepage.b629nx75c > site-linkz > ol > li#bsky-lnk:hover {
+    background: rgb(40 140 210);
+    filter: drop-shadow(0px 0px 5px rgb(40 140 210));
+}
+homepage.b629nx75c > site-linkz > ol > li#bsky-lnk:active {
+    background: rgb(35 135 205);
+    filter: drop-shadow(0px 0px 5px rgb(35 135 205));
+}
+
+/* - */
+
+homepage.b629nx75c > site-linkz > ol > li#da-lnk {
+    background: rgb(65 190 55);
+    filter: drop-shadow(0px 0px 5px rgb(65 190 55));
+}
+
+homepage.b629nx75c > site-linkz > ol > li#da-lnk:hover {
+    background: rgb(60 185 50);
+    filter: drop-shadow(0px 0px 5px rgb(60 185 50));
+}
+homepage.b629nx75c > site-linkz > ol > li#da-lnk:active {
+    background: rgb(55 180 45);
+    filter: drop-shadow(0px 0px 5px rgb(55 180 45));
+}
+
+/* - */
+
+homepage.b629nx75c > site-linkz > ol > li#disc-lnk {
+    background: rgb(90 100 235);
+    filter: drop-shadow(0px 0px 5px rgb(90 100 235));
+}
+
+homepage.b629nx75c > site-linkz > ol > li#disc-lnk:hover {
+    background: rgb(85 95 230);
+    filter: drop-shadow(0px 0px 5px rgb(85 95 230));
+}
+homepage.b629nx75c > site-linkz > ol > li#disc-lnk:active {
+    background: rgb(80 90 225);
+    filter: drop-shadow(0px 0px 5px rgb(80 90 225));
+}
