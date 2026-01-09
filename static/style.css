@@ -58,13 +58,13 @@ button.btn.disabled, button.btn[disabled=""] {
 }
 
 homepage.b629nx75c {
-	transition: all 0.5s ease;
+	transition: all 1s ease;
 }
 homepage.d829oj2n1 {
-	transition: all 0.5s ease;
+	transition: all 1s ease;
 }
 button.btn {
-	transition: all 0.5s ease;
+	transition: all 1s ease;
 }
 
 /* --- START OF THE FULL PAGE --- */
@@ -277,4 +277,5 @@ button.btn#backhome {
     transform: rotate(-90deg);
 	animation: fadeIntroB 2s ease;
 }
+
 
