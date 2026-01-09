@@ -178,4 +178,20 @@ homepage.b629nx75c > site-linkz > ol > li#disc-lnk:hover {
 homepage.b629nx75c > site-linkz > ol > li#disc-lnk:active {
     background: rgb(80 90 225);
     filter: drop-shadow(0px 0px 5px rgb(80 90 225));
+
+}
+
+/* -- Mobile Layout -- */
+
+@media screen and (max-width: 500px) {
+	homepage.b629nx75c {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		transform: scale(0.85);
+	}
+	
+	homepage.b629nx75c > site-linkz {
+		margin: 0;
+	}
 }
