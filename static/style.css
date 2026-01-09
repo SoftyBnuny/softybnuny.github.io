@@ -18,7 +18,7 @@
 	to {margin-left: 0;}
 }
 @keyframes fadeIntroC {
-	from {margin-right: -3000;}
+	from {margin-right: -1500;}
 	to {margin-right: 0;}
 }
 
@@ -81,7 +81,6 @@ homepage.b629nx75c {
 }
 homepage.d829oj2n1 {
 	flex-direction: column;
-	animation: fadeIntroC 2s ease;
 	width: 100%;
     height: 100%;
     display: flex;
@@ -278,3 +277,4 @@ button.btn#backhome {
     transform: rotate(-90deg);
 	animation: fadeIntroB 2s ease;
 }
+
