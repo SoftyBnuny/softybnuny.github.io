@@ -45,4 +45,34 @@ document.getElementById('disc-lnk').addEventListener('click', function() {
 window.open('https://discord.gg/VQFg9KRsvg', '_blank').focus();
 });
 
+/* --- COMMISSION SECTION ON PAGE --- */
+
+document.getElementById('rightcoms').addEventListener('click', function() {
+	executeCommission();
+});
+document.getElementById('backhome').addEventListener('click', function() {
+	executeCommissionB();
+});
+
+if (window.location.href.indexOf("#coms") > -1) {
+	executeCommission();
+}
+
+/* - */
+
+function executeCommission() {
+	document.getElementById('b629nx75c').classList.add('disabled');
+	document.getElementById('rightcoms').classList.add('disabled');
+	//
+	document.getElementById('d829oj2n1').classList.remove('disabled');
+	document.getElementById('backhome').classList.remove('disabled');
+}
+function executeCommissionB() {
+	document.getElementById('b629nx75c').classList.remove('disabled');
+	document.getElementById('rightcoms').classList.remove('disabled');
+	//
+	document.getElementById('d829oj2n1').classList.add('disabled');
+	document.getElementById('backhome').classList.add('disabled');
+}
+
 });
