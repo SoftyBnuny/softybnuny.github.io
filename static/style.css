@@ -17,6 +17,10 @@
 	from {margin-left: -1500;}
 	to {margin-left: 0;}
 }
+@keyframes fadeIntroC {
+	from {margin-right: -3000;}
+	to {margin-right: 0;}
+}
 
 /* - */
 
@@ -45,6 +49,24 @@ b, bold, strong {
     font-weight: normal;
 }
 
+button.btn.disabled, button.btn[disabled=""] {
+    display: none !important;
+	cursor: not-allowed !important;
+	width: 0px !important;
+	height: 0px !important;
+	font-size: 0px !important;
+}
+
+homepage.b629nx75c {
+	transition: all 0.5s ease;
+}
+homepage.d829oj2n1 {
+	transition: all 0.5s ease;
+}
+button.btn {
+	transition: all 0.5s ease;
+}
+
 /* --- START OF THE FULL PAGE --- */
 
 homepage.b629nx75c {
@@ -53,8 +75,19 @@ homepage.b629nx75c {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0;
+	overflow: hidden;
 	animation: fadeIntroB 2s ease;
+	margin-left: 0;
+}
+homepage.d829oj2n1 {
+	flex-direction: column;
+	animation: fadeIntroC 2s ease;
+	width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden;
 }
 
 homepage.b629nx75c > logo {
@@ -178,7 +211,12 @@ homepage.b629nx75c > site-linkz > ol > li#disc-lnk:hover {
 homepage.b629nx75c > site-linkz > ol > li#disc-lnk:active {
     background: rgb(80 90 225);
     filter: drop-shadow(0px 0px 5px rgb(80 90 225));
+}
 
+homepage.b629nx75c.disabled,
+homepage.d829oj2n1.disabled {
+	width: 0!important;
+	transform: scale(0);
 }
 
 /* --- Mobile Layout --- */
@@ -197,6 +235,46 @@ homepage.b629nx75c > site-linkz > ol > li#disc-lnk:active {
 	homepage.b629nx75c > logo {
 		height: auto;
 	}
+	button.btn#backhome {
+		transform: scale(0.85) rotate(-90deg) !important;
+		left: -12.5% !important;
+	}
+	button.btn#rightcoms {
+		transform: scale(0.85) rotate(-90deg) !important;
+		right: -27.5% !important;
+	}
 }
 
+/* -- Commission Layout -- */
 
+button.btn {
+    position: absolute;
+    height: auto;
+    width: auto;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    font-family: "Fuzzy Bubbles Bold";
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* - */
+
+button.btn#rightcoms {
+    right: -7.5%;
+    bottom: 47.5%;
+    transform: rotate(90deg);
+	animation: fadeIntroC 2s ease;
+}
+button.btn#backhome {
+    left: -3%;
+    bottom: 47.5%;
+    transform: rotate(-90deg);
+	animation: fadeIntroB 2s ease;
+}
