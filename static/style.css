@@ -194,5 +194,9 @@ homepage.b629nx75c > site-linkz > ol > li#disc-lnk:active {
 	homepage.b629nx75c > site-linkz {
 		margin: 0;
 	}
+	homepage.b629nx75c > logo {
+		height: auto;
+	}
 }
+
 
