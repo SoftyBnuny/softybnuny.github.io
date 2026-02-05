@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 console.clear();
 generateLogo();
-getRidofDisabledoffPages();
 
 // -- Logo Generate from SVG
 // This is done so nobody can steal the main logo used for SoftyBnuny, it's branding, and it's artworks.
@@ -25,10 +24,10 @@ document.getElementById("lg-sb").innerHTML = `<div><svg version="1.1" xmlns="htt
 // -- Get Rid of "Disabled" Class off Page elements
 // Self-explanitory :p
 
-function getRidofDisabledoffPages() {
+setTimeout(function(){
 	document.getElementById('d829oj2n1').classList.remove('disabled');
 	document.getElementById('nsi72mx0z').classList.remove('disabled');
-}
+}, 2100);
 
 /* --- SOCIAL MEDIA LINKS --- */
 
