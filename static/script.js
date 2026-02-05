@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 console.clear();
 generateLogo();
+getRidofDisabledoffPages();
 
 // -- Logo Generate from SVG
 // This is done so nobody can steal the main logo used for SoftyBnuny, it's branding, and it's artworks.
@@ -19,6 +20,14 @@ document.getElementById("lg-sb").innerHTML = `<div><svg version="1.1" xmlns="htt
 <path d="M0,0 L6,0 L6,1 L7,1 L7,2 L8,2 L8,3 L9,3 L9,6 L10,6 L10,7 L12,7 L12,6 L13,6 L13,5 L15,5 L15,4 L17,4 L17,3 L19,3 L19,2 L22,2 L22,1 L26,1 L26,0 L36,0 L36,1 L40,1 L40,2 L42,2 L42,3 L44,3 L44,4 L46,4 L46,5 L47,5 L47,6 L48,6 L48,7 L49,7 L49,8 L50,8 L50,9 L51,9 L51,10 L52,10 L52,11 L53,11 L53,12 L54,12 L54,14 L55,14 L55,16 L56,16 L56,18 L57,18 L57,21 L58,21 L58,24 L59,24 L59,30 L60,30 L60,36 L61,36 L61,49 L62,49 L62,77 L61,77 L61,79 L60,79 L60,80 L59,80 L59,81 L57,81 L57,82 L54,82 L54,81 L51,81 L51,80 L50,80 L50,78 L49,78 L49,76 L48,76 L48,41 L47,41 L47,33 L46,33 L46,28 L45,28 L45,24 L44,24 L44,22 L43,22 L43,20 L42,20 L42,19 L41,19 L41,18 L40,18 L40,16 L38,16 L38,15 L36,15 L36,14 L32,14 L32,13 L30,13 L30,14 L25,14 L25,15 L23,15 L23,16 L21,16 L21,17 L20,17 L20,18 L18,18 L18,19 L17,19 L17,20 L16,20 L16,21 L15,21 L15,22 L14,22 L14,24 L13,24 L13,26 L12,26 L12,32 L13,32 L13,56 L14,56 L14,77 L13,77 L13,79 L12,79 L12,80 L11,80 L11,81 L9,81 L9,82 L5,82 L5,81 L3,81 L3,80 L2,80 L2,79 L1,79 L1,76 L0,76 L0,40 L-1,40 L-1,22 L-2,22 L-2,13 L-3,13 L-3,9 L-4,9 L-4,4 L-3,4 L-3,2 L-2,2 L-2,1 L0,1 Z " fill="#FFFFFF" transform="translate(112,305)"/>
 <path d="M0,0 L5,0 L5,1 L7,1 L7,2 L8,2 L8,4 L9,4 L9,8 L11,8 L11,7 L13,7 L13,6 L15,6 L15,5 L18,5 L18,4 L21,4 L21,3 L26,3 L26,2 L34,2 L34,3 L38,3 L38,4 L40,4 L40,5 L42,5 L42,6 L44,6 L44,7 L46,7 L46,8 L47,8 L47,9 L48,9 L48,10 L49,10 L49,11 L50,11 L50,12 L51,12 L51,13 L52,13 L52,15 L53,15 L53,16 L54,16 L54,18 L55,18 L55,20 L56,20 L56,23 L57,23 L57,26 L58,26 L58,30 L59,30 L59,34 L60,34 L60,43 L61,43 L61,69 L62,69 L62,77 L61,77 L61,79 L60,79 L60,80 L59,80 L59,81 L57,81 L57,82 L53,82 L53,81 L51,81 L51,80 L50,80 L50,79 L49,79 L49,76 L48,76 L48,54 L47,54 L47,38 L46,38 L46,33 L45,33 L45,29 L44,29 L44,26 L43,26 L43,24 L42,24 L42,22 L41,22 L41,21 L40,21 L40,20 L39,20 L39,19 L38,19 L38,18 L36,18 L36,17 L34,17 L34,16 L24,16 L24,17 L21,17 L21,18 L19,18 L19,19 L17,19 L17,20 L15,20 L15,21 L14,21 L14,22 L13,22 L13,23 L12,23 L12,24 L11,24 L11,71 L10,71 L10,78 L9,78 L9,80 L8,80 L8,81 L6,81 L6,82 L1,82 L1,81 L-1,81 L-1,80 L-2,80 L-2,78 L-3,78 L-3,65 L-2,65 L-2,26 L-3,26 L-3,12 L-4,12 L-4,4 L-3,4 L-3,2 L-2,2 L-2,1 L0,1 Z " fill="#FFFFFF" transform="translate(261,303)"/>
 </svg></div>`;
+}
+
+// -- Get Rid of "Disabled" Class off Page elements
+// Self-explanitory :p
+
+function getRidofDisabledoffPages() {
+	document.getElementById('d829oj2n1').classList.remove('disabled');
+	document.getElementById('nsi72mx0z').classList.remove('disabled');
 }
 
 /* --- SOCIAL MEDIA LINKS --- */
@@ -51,7 +60,7 @@ document.getElementById('rightcoms').addEventListener('click', function() {
 	executeCommission();
 });
 document.getElementById('backhome').addEventListener('click', function() {
-	executeCommissionB();
+	executeHomepage();
 });
 
 if (window.location.href.indexOf("#coms") > -1) {
@@ -60,19 +69,18 @@ if (window.location.href.indexOf("#coms") > -1) {
 
 /* - */
 
-function executeCommission() {
-	document.getElementById('b629nx75c').classList.add('disabled');
-	document.getElementById('rightcoms').classList.add('disabled');
-	//
-	document.getElementById('d829oj2n1').classList.remove('disabled');
-	document.getElementById('backhome').classList.remove('disabled');
-}
-function executeCommissionB() {
-	document.getElementById('b629nx75c').classList.remove('disabled');
+function executeHomepage() {
 	document.getElementById('rightcoms').classList.remove('disabled');
-	//
-	document.getElementById('d829oj2n1').classList.add('disabled');
 	document.getElementById('backhome').classList.add('disabled');
+	//
+	document.getElementById('homepage').style.transform = 'translateX(0%)';
+}
+
+function executeCommission() {
+	document.getElementById('rightcoms').classList.add('disabled');
+	document.getElementById('backhome').classList.remove('disabled');
+	//
+	document.getElementById('homepage').style.transform = 'translateX(-100%)';
 }
 
 });
