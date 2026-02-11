@@ -43,9 +43,9 @@ window.open('https://bsky.app/profile/softybnuny.bsky.social', '_blank').focus()
 
 /* - */
 
-document.getElementById('da-lnk').addEventListener('click', function() {
-window.open('https://www.deviantart.com/bnunysofty', '_blank').focus();
-});
+/* document.getElementById('x-lnk').addEventListener('click', function() {
+window.open('https://x.com/softybnuny', '_blank').focus();
+}); */
 
 /* - */
 
