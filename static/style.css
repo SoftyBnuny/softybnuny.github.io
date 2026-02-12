@@ -246,6 +246,7 @@ page#b629nx75c > site-linkz > ol > li#disc-lnk:active {
 	}
 	page#d829oj2n1 > compage {
 		display: none !important; /* compability reasons... */
+	}
 }
 
 /* -- Commission Layout -- */
@@ -449,3 +450,4 @@ page#d829oj2n1 > compage > div.com-wwd > div > ul {
 page#d829oj2n1 > compage > p[type="B"] {
     margin-bottom: 20px;
 }
+
