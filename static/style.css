@@ -234,9 +234,25 @@ page#b629nx75c > site-linkz > ol > li#disc-lnk:active {
 		transform: scale(0.85) rotate(-90deg) !important;
 		right: -27.5% !important;
 	}
+	page#d829oj2n1 > p {
+		font-size: 20px;
+		margin: 0;
+		display: flex;
+		color: white;
+		filter: drop-shadow(0px 0px 7.5px #ffffff);
+		width: 90%;
+		text-align: center;
+		display: block !important;
+	}
+	page#d829oj2n1 > compage {
+		display: none !important; /* compability reasons... */
 }
 
 /* -- Commission Layout -- */
+
+page#d829oj2n1 > p {
+	display: none;
+}
 
 button.btn {
     position: absolute;
@@ -278,4 +294,158 @@ button.btn#backhome {
     bottom: 47.5%;
     transform: rotate(-90deg);
 	animation: homeButton 2s ease;
+}
+
+/* -- */
+
+page#d829oj2n1 > compage {
+    width: 80%;
+    max-width: 80%;
+    display: flex;
+    height: auto;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: all;
+	-ms-overflow-style: none;
+    scrollbar-width: none;
+}
+page#d829oj2n1 > compage::-webkit-scrollbar {
+  display: none;
+}
+
+page#d829oj2n1 > compage > h1 {
+    font-size: 45px;
+    font-weight: normal;
+    text-decoration: underline dotted;
+    color: white;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+page#d829oj2n1 > compage > p {
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    color: white;
+    filter: drop-shadow(0px 0px 7.5px #ffffff);
+    width: 100%;
+    text-align: center;
+}
+
+page#d829oj2n1 > compage > p > b {
+    display: flex;
+    margin: 0;
+    align-items: baseline;
+}
+
+page#d829oj2n1 > compage > div.com-price-section {
+    margin-top: 35px;
+    max-width: 75%;
+    max-height: 50%;
+    width: 75%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+page#d829oj2n1 > compage > div.com-price-section > img {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+}
+
+page#d829oj2n1 > compage > div.com-price-section[type="regularsketch"] {
+    flex-direction: row-reverse;
+}
+
+page#d829oj2n1 > compage > div.com-price-section[type="regularsketch"] > img {
+    filter: drop-shadow(0px 0px 5px #5e5e5e);
+}
+
+page#d829oj2n1 > compage > div.com-price-section > textarea-cps {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+page#d829oj2n1 > compage > div.com-price-section > textarea-cps > h1 {
+    color: rgb(180 90 205);
+    filter: drop-shadow(0px 0px 5px rgb(180 90 205));
+    margin: 0 0 5 0;
+    font-size: 40px;
+}
+
+page#d829oj2n1 > compage > div.com-price-section > textarea-cps > h2 {
+    color: rgb(145 225 100);
+    filter: drop-shadow(0px 0px 5px rgb(145 225 100));
+    margin: 0 0 25 0;
+    font-size: 32.5px;
+}
+
+page#d829oj2n1 > compage > div.com-price-section > textarea-cps > p {
+    margin: 0;
+    font-size: 20px;
+	filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+page#d829oj2n1 > compage > div.com-price-section > textarea-cps > p > b {
+    margin-top: 10px;
+    display: block;
+}
+
+page#d829oj2n1 > compage > div.com-price-section[type="regularartwork"] {
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+
+page#d829oj2n1 > compage > div.com-price-section[type="regularartwork"] > textarea-cps > p > b {
+    font-family: 'Fuzzy Bubbles';
+}
+
+page#d829oj2n1 > compage > div.com-wwd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 75%;
+    margin-bottom: 20px;
+}
+
+page#d829oj2n1 > compage > div.com-wwd > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 7.5px;
+}
+
+page#d829oj2n1 > compage > div.com-wwd > div > h1 {
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: underline dotted;
+    color: white;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+page#d829oj2n1 > compage > div.com-wwd > div > ul {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+page#d829oj2n1 > compage > p[type="B"] {
+    margin-bottom: 20px;
 }
