@@ -1,6 +1,7 @@
 /* --.-- SOFTYBNUNY CSS CODE == TO BE USED WITHIN THE SITE --.-- */
 
 @import url("font-mdhbhs6zna7on.css");
+@import url("bg-mdhbhs6zna7on.css");
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -37,7 +38,6 @@ html {
 body {
 	opacity: 1;
 	animation: fadeIntro 0.75s ease;
-	background: center / cover no-repeat url('./bg-mdhbhs6zna7on.webp');
 }
 
 b, bold, strong {
