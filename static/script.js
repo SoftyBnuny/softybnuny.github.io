@@ -105,7 +105,7 @@ window.open('https://bsky.app/profile/softybnuny.bsky.social', '_blank').focus()
 /* - */
 
 document.getElementById('disc-lnk').addEventListener('click', function() {
-window.open('https://discord.gg/VQFg9KRsvg', '_blank').focus();
+window.open('https://discord.gg/X993Cqjb2C', '_blank').focus();
 });
 
 /* --- COMMISSION SECTION ON PAGE --- */
