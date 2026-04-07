@@ -276,7 +276,7 @@ btn-page > button#subpage.disabled {
 
 btn-page > button#subpage {
     bottom: 20px;
-	animation: fadeIntroC 1.5s ease;
+	/* animation: fadeIntroC 1.5s ease; */
 	transition: all 0.5s ease;
 	transform: translateY(0%);
 }
