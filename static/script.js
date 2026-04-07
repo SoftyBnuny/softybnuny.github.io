@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
 console.clear();
 generateLogo();
 
+/* Just in case more errors come for no reason... */
+setTimeout(function(){
+	console.clear();
+}, 250);
+
 // -- Logo Generate from SVG
 // This is done so nobody can steal the main logo used for SoftyBnuny, it's branding, and it's artworks.
 
