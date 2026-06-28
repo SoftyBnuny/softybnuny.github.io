@@ -17,10 +17,6 @@
 	from {transform: translateX(-100%);}
 	to {transform: translateX(0%);}
 }
-@keyframes fadeIntroC {
-	from {transform: translateY(1000%);}
-	to {transform: translateY(0%);}
-}
 
 /* - */
 
@@ -131,7 +127,7 @@ page > site-linkz > ol > li {
 
 page > site-linkz > ol > li#fa-lnk > svg,
 page > site-linkz > ol > li#bsky-lnk > svg,
-page > site-linkz > ol > li#da-lnk > svg,
+page > site-linkz > ol > li#tw-lnk > svg,
 page > site-linkz > ol > li#disc-lnk > svg {
     width: 30px;
     height: 30px;
@@ -159,17 +155,34 @@ page > site-linkz > ol > li#fa-lnk:active {
 /* - */
 
 page > site-linkz > ol > li#bsky-lnk {
-    background: rgb(45 145 215);
-    filter: drop-shadow(0px 0px 5px rgb(45 145 215));
+    background: rgb(25 155 245);
+    filter: drop-shadow(0px 0px 5px rgb(25 155 245));
 }
 
 page > site-linkz > ol > li#bsky-lnk:hover {
-    background: rgb(40 140 210);
-    filter: drop-shadow(0px 0px 5px rgb(40 140 210));
+    background: rgb(20 150 240);
+    filter: drop-shadow(0px 0px 5px rgb(20 150 240));
 }
 page > site-linkz > ol > li#bsky-lnk:active {
-    background: rgb(35 135 205);
-    filter: drop-shadow(0px 0px 5px rgb(35 135 205));
+    background: rgb(15 145 235);
+    filter: drop-shadow(0px 0px 5px rgb(15 145 235));
+}
+
+/* - */
+
+page > site-linkz > ol > li#tw-lnk {
+    background: rgb(20 135 215);
+    filter: drop-shadow(0px 0px 5px rgb(20 135 215));
+}
+
+page > site-linkz > ol > li#tw-lnk:hover {
+    background: rgb(15 130 210);
+    filter: drop-shadow(0px 0px 5px rgb(15 130 210));
+}
+
+page > site-linkz > ol > li#tw-lnk:active {
+    background: rgb(10 125 205);
+    filter: drop-shadow(0px 0px 5px rgb(10 125 205));
 }
 
 /* - */
@@ -203,85 +216,4 @@ page > site-linkz > ol > li#disc-lnk:active {
 	page > site-linkz {
 		margin-left: 0px;
 	}
-}
-
-/* For Archives iframe -- That loads via. Sub-Page */
-
-homepage > sub-page {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-homepage > sub-page > iframe {
-    width: 100%;
-    height: 75%;
-    background: transparent;
-    border: hidden;
-    pointer-events: all;
-}
-
-/* Buttons */
-
-btn-page {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: flex;
-}
-btn-page {
-	flex-direction: column;
-	align-items: center;
-}
-
-btn-page > button {
-	position: absolute;
-	font-size: 30px;
-    font-weight: bold;
-    border: hidden;
-	transition: none;
-}
-btn-page > button {
-    background: transparent;
-    color: white;
-    filter: drop-shadow(0px 0px 5px #ffffff);
-	pointer-events: all;
-	user-select: none;
-	cursor: pointer;
-}
-
-btn-page > button:hover {
-	color: rgb(250 250 250);
-    filter: drop-shadow(0px 0px 5px rgb(250 250 250));
-}
-btn-page > button:active {
-	color: rgb(245 245 245);
-    filter: drop-shadow(0px 0px 5px rgb(245 245 245));
-}
-
-btn-page > button#page.disabled,
-btn-page > button#subpage.disabled {
-	pointer-events: none;
-}
-
-btn-page > button#page.disabled {
-	transform: translateY(-1000%);
-}
-btn-page > button#subpage.disabled {
-	transform: translateY(1000%);
-}
-
-btn-page > button#subpage {
-    bottom: 20px;
-	/* animation: fadeIntroC 1.5s ease; */
-	transition: all 0.5s ease;
-	transform: translateY(0%);
-}
-btn-page > button#page {
-    top: 20px;
-	transition: all 0.5s ease;
-	transform: translateY(0%);
 }
