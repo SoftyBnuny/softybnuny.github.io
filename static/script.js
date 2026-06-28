@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 console.clear();
 generateLogo();
 
-/* Just in case more errors come for no reason... */
-setTimeout(function(){
-	console.clear();
-}, 250);
-
 // -- Logo Generate from SVG
 // This is done so nobody can steal the main logo used for SoftyBnuny, it's branding, and it's artworks.
 
@@ -40,11 +35,19 @@ document.getElementById('bsky-lnk').addEventListener('click', function() {
 
 /* - */
 
+document.getElementById('tw-lnk').addEventListener('click', function() {
+	window.open('https://x.com/softybnuny', '_blank').focus();
+});
+
+/* - */
+
 document.getElementById('disc-lnk').addEventListener('click', function() {
 	window.open('https://discord.gg/X993Cqjb2C', '_blank').focus();
 });
 
-// TRANSITION FROM MAIN PAGE TO SUB PAGE //
+// As of June 28th 2026, the main page to sub page action and animations, has since been defunct and will no longer be used.
+
+/* // TRANSITION FROM MAIN PAGE TO SUB PAGE //
 
 document.getElementById('subpage').addEventListener('click', function() {
 	transitionSubPage();
@@ -70,6 +73,106 @@ function transitionMainPage() {
 	document.getElementById('subpage').classList.remove('disabled');
 	document.getElementById('subbpage').classList.add('disabled');
 	}, 750);
+} */
+
+/* CSS CODE TO THE DEFUNCT THINGY
+
+@keyframes fadeIntroC {
+	from {transform: translateY(1000%);}
+	to {transform: translateY(0%);}
 }
 
+For Archives iframe -- That loads via. Sub-Page
+
+homepage > sub-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+homepage > sub-page > iframe {
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    border: hidden;
+    pointer-events: all;
+}
+
+Buttons
+
+btn-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+}
+btn-page {
+	flex-direction: column;
+	align-items: center;
+}
+
+btn-page > button {
+	position: absolute;
+	font-size: 30px;
+    font-weight: bold;
+    border: hidden;
+	transition: none;
+}
+btn-page > button {
+    background: transparent;
+    color: white;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+	pointer-events: all;
+	user-select: none;
+	cursor: pointer;
+}
+
+btn-page > button:hover {
+	color: rgb(250 250 250);
+    filter: drop-shadow(0px 0px 5px rgb(250 250 250));
+}
+btn-page > button:active {
+	color: rgb(245 245 245);
+    filter: drop-shadow(0px 0px 5px rgb(245 245 245));
+}
+
+btn-page > button#page.disabled,
+btn-page > button#subpage.disabled {
+	pointer-events: none;
+}
+
+btn-page > button#page.disabled {
+	transform: translateY(-1000%);
+}
+btn-page > button#subpage.disabled {
+	transform: translateY(1000%);
+}
+
+btn-page > button#subpage {
+    bottom: 20px;
+	animation: fadeIntroC 1.5s ease;
+	transition: all 0.5s ease;
+	transform: translateY(0%);
+}
+btn-page > button#page {
+    top: 20px;
+	transition: all 0.5s ease;
+	transform: translateY(0%);
+}*/
+
+/* OLD HTML CODE FOR IT
+
+<sub-page id="subbpage" class="disabled">
+<iframe src="https://softybnuny.straw.page/?template=true&embed=true" loading="lazy" allowtransparency="true"><style type="text/css">
+html, body {background: transparent !important;}
+ </style></iframe>
+</sub-page>
+
+<btn-page>
+<button id="subpage">⮟ Strawpage</button>
+<button class="disabled" id="page">⮝ Main</button>
+</btn-page>*/
 });
