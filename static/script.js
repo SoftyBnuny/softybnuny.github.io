@@ -41,6 +41,12 @@ document.getElementById('tw-lnk').addEventListener('click', function() {
 
 /* - */
 
+document.getElementById('e621-lnk').addEventListener('click', function() {
+	window.open('https://e621.net/users/2572954', '_blank').focus();
+});
+	
+/* - */
+
 document.getElementById('disc-lnk').addEventListener('click', function() {
 	window.open('https://discord.gg/X993Cqjb2C', '_blank').focus();
 });
