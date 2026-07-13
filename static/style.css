@@ -128,6 +128,7 @@ page > site-linkz > ol > li {
 page > site-linkz > ol > li#fa-lnk > svg,
 page > site-linkz > ol > li#bsky-lnk > svg,
 page > site-linkz > ol > li#tw-lnk > svg,
+page > site-linkz > ol > li#e621-lnk > svg,
 page > site-linkz > ol > li#disc-lnk > svg {
     width: 30px;
     height: 30px;
@@ -183,6 +184,23 @@ page > site-linkz > ol > li#tw-lnk:hover {
 page > site-linkz > ol > li#tw-lnk:active {
     background: rgb(10 125 205);
     filter: drop-shadow(0px 0px 5px rgb(10 125 205));
+}
+
+/* - */
+
+page > site-linkz > ol > li#e621-lnk {
+    background: rgb(252 191 49);
+    filter: drop-shadow(0px 0px 5px rgb(252 191 49));
+}
+
+page > site-linkz > ol > li#e621-lnk:hover {
+    background: rgb(247 186 44);
+    filter: drop-shadow(0px 0px 5px rgb(247 186 44));
+}
+
+page > site-linkz > ol > li#e621-lnk:active {
+    background: rgb(242 181 39);
+    filter: drop-shadow(0px 0px 5px rgb(242 181 39));
 }
 
 /* - */
