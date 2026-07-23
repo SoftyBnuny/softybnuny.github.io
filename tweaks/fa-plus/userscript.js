@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net +
-// @version      b0.0
+// @version      v1
 // @description  Maximising the best out of FurAffinity[dot]net, by removing advertisements and features that bottleneck the experience.
 // @author       SoftyBnuny
 // @match        *://*.furaffinity.net/*
@@ -12,10 +12,34 @@
 (function() {
 'use strict';
 
-/*mainTweakLoad();
+// So the script can remove (most) advertisements from all pages
 
-function mainTweakLoad() {
-    GM_addStyle(`
-    `);
-}*/
+GM_addStyle(`
+#pageid-submission #submission-main-content > div:nth-child(1) {
+justify-content: unset!important;
+}
+
+section > figure:has(> b > u > a > img.blocked-content) {
+    display: none;
+    pointer-events: none;
+}
+`);
+
+const mainAds = '.leaderboardAd, .footerAds__column, .submission-ads, .sidebarAds, .comment-input-ads, .rectangleAd';
+
+function mainBlockAds(root = document) {
+    root.querySelectorAll(mainAds).forEach(element => {
+        element.remove();
+    });
+}
+
+const observer = new MutationObserver(() => mainBlockAds());
+observer.observe(document.documentElement, { childList: true, subtree: true });
+
+main();
+
+function main(root = document) {
+mainBlockAds(root);
+}
+
 })();
