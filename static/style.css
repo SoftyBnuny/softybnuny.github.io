@@ -70,17 +70,17 @@ homepage > sub-page {
 
 homepage > page {
 	width: 100%;
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+	min-width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	flex-direction: column;
 }
 
 page > logo {
 	width: auto;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -97,8 +97,10 @@ page > logo > div > svg {
 }
 
 page > site-linkz {
-    display: flex;
-	margin-left: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
 }
 
 /* -- */
@@ -107,131 +109,29 @@ page > site-linkz > ol, page#b629nx75c > site-linkz > ol > li, site-linkz > ol >
     margin: 0;
     content: none;
     padding: 0;
+    display: flex;
 }
 
 page > site-linkz > ol > li {
     background: transparent;
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
     color: white;
-    border-radius: 7.5px;
     cursor: pointer;
     display: flex;
     pointer-events: all;
-    user-select: none;
-    margin-bottom: 17.5px;
-    justify-content: center;
-    align-items: flex-end;
-	transition: all ease 0.1s;
+    transition: all ease 0.1s;
 }
 
-page > site-linkz > ol > li#fa-lnk > svg,
-page > site-linkz > ol > li#bsky-lnk > svg,
-page > site-linkz > ol > li#tw-lnk > svg,
-page > site-linkz > ol > li#e621-lnk > svg,
-page > site-linkz > ol > li#disc-lnk > svg {
-    width: 30px;
-    height: 30px;
-    margin: 0 10 0 0;
+page > site-linkz > ol > li > svg {
+    width: 50px;
+    height: 50px;
     padding: 0;
     fill: white;
+    filter: drop-shadow(0px 0px 10px rgb(255 255 255 / 50%));
+	transition: all ease 0.5s;
+	pointer-events: all;
 }
 
-/* - */
-
-page > site-linkz > ol > li#fa-lnk {
-    background: rgb(215 165 45);
-    filter: drop-shadow(0px 0px 5px rgb(215 165 45));
-}
-
-page > site-linkz > ol > li#fa-lnk:hover {
-    background: rgb(205 155 35);
-    filter: drop-shadow(0px 0px 5px rgb(205 155 35));
-}
-page > site-linkz > ol > li#fa-lnk:active {
-    background: rgb(200 150 30);
-    filter: drop-shadow(0px 0px 5px rgb(200 150 30));
-}
-
-/* - */
-
-page > site-linkz > ol > li#bsky-lnk {
-    background: rgb(25 155 245);
-    filter: drop-shadow(0px 0px 5px rgb(25 155 245));
-}
-
-page > site-linkz > ol > li#bsky-lnk:hover {
-    background: rgb(20 150 240);
-    filter: drop-shadow(0px 0px 5px rgb(20 150 240));
-}
-page > site-linkz > ol > li#bsky-lnk:active {
-    background: rgb(15 145 235);
-    filter: drop-shadow(0px 0px 5px rgb(15 145 235));
-}
-
-/* - */
-
-page > site-linkz > ol > li#tw-lnk {
-    background: rgb(20 135 215);
-    filter: drop-shadow(0px 0px 5px rgb(20 135 215));
-}
-
-page > site-linkz > ol > li#tw-lnk:hover {
-    background: rgb(15 130 210);
-    filter: drop-shadow(0px 0px 5px rgb(15 130 210));
-}
-
-page > site-linkz > ol > li#tw-lnk:active {
-    background: rgb(10 125 205);
-    filter: drop-shadow(0px 0px 5px rgb(10 125 205));
-}
-
-/* - */
-
-page > site-linkz > ol > li#e621-lnk {
-    background: rgb(252 191 49);
-    filter: drop-shadow(0px 0px 5px rgb(252 191 49));
-}
-
-page > site-linkz > ol > li#e621-lnk:hover {
-    background: rgb(247 186 44);
-    filter: drop-shadow(0px 0px 5px rgb(247 186 44));
-}
-
-page > site-linkz > ol > li#e621-lnk:active {
-    background: rgb(242 181 39);
-    filter: drop-shadow(0px 0px 5px rgb(242 181 39));
-}
-
-/* - */
-
-page > site-linkz > ol > li#disc-lnk {
-    background: rgb(90 100 235);
-    filter: drop-shadow(0px 0px 5px rgb(90 100 235));
-}
-
-page > site-linkz > ol > li#disc-lnk:hover {
-    background: rgb(85 95 230);
-    filter: drop-shadow(0px 0px 5px rgb(85 95 230));
-}
-page > site-linkz > ol > li#disc-lnk:active {
-    background: rgb(80 90 225);
-    filter: drop-shadow(0px 0px 5px rgb(80 90 225));
-}
-
-/* --- Mobile Layout --- */
-
-@media screen and (max-width: 750px) {
-	page {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		transform: scale(0.85);
-	}
-	page > logo {
-		height: auto;
-	}
-	page > site-linkz {
-		margin-left: 0px;
-	}
+page > site-linkz > ol > li > svg:hover {
+	filter: drop-shadow(0px 0px 10px rgb(255 255 255 / 85%));
 }
