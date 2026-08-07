@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         FurAffinity[dot]net +
-// @version      v1
+// @version      v1.001
 // @description  Maximising the best out of FurAffinity[dot]net, by removing advertisements and features that bottleneck the experience.
 // @author       SoftyBnuny
 // @match        *://*.furaffinity.net/*
@@ -25,7 +25,7 @@ section > figure:has(> b > u > a > img.blocked-content) {
 }
 `);
 
-const mainAds = '.leaderboardAd, .footerAds__column, .submission-ads, .sidebarAds, .comment-input-ads, .rectangleAd';
+const mainAds = '.leaderboardAd, .footerAds__column, .submission-ads, .sidebarAds, .comment-input-ads, .rectangleAd, .tallRectangleAd';
 
 function mainBlockAds(root = document) {
     root.querySelectorAll(mainAds).forEach(element => {
