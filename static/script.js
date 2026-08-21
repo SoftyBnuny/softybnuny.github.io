@@ -42,7 +42,7 @@ document.getElementById('tw-lnk').addEventListener('click', function() {
 /* - */
 
 document.getElementById('e621-lnk').addEventListener('click', function() {
-	window.open('https://e621.net/users/2572954', '_blank').focus();
+	window.open('https://e621.net/artists/122239', '_blank').focus();
 });
 	
 /* - */
