@@ -23,7 +23,7 @@ function generateLogo() {
 
 /* --- SOCIAL MEDIA LINKS --- */
 
-document.getElementById('fa-lnk').addEventListener('click', function() {
+/* document.getElementById('fa-lnk').addEventListener('click', function() {
 	window.open('https://www.furaffinity.net/user/softybnuny', '_blank').focus();
 });
 
@@ -35,7 +35,7 @@ document.getElementById('bsky-lnk').addEventListener('click', function() {
 
 /* - */
 
-document.getElementById('tw-lnk').addEventListener('click', function() {
+/* document.getElementById('tw-lnk').addEventListener('click', function() {
 	window.open('https://x.com/softybnuny', '_blank').focus();
 });
 
