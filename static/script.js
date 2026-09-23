@@ -42,7 +42,7 @@ document.getElementById('e621-lnk').addEventListener('click', function() {
 /* - */
 
 document.getElementById('disc-lnk').addEventListener('click', function() {
-	window.open('https://discord.gg/X993Cqjb2C', '_blank').focus();
+	window.open('https://discord.gg/softybnuny', '_blank').focus();
 });
 
 // As of June 28th 2026, the main page to sub page action and animations, has since been defunct and will no longer be used.
